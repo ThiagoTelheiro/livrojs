@@ -1,0 +1,14 @@
+<meta charset="UTF-8" />
+
+<script>
+  const valorJantar = Number(prompt("Valor do Jantar:"));
+  const taxaGarcon = (10 * valorJantar) / 100;
+  const soma = valorJantar + taxaGarcon;
+  alert(
+    `Valor do Jantar R$: ${valorJantar.toFixed(
+      2
+    )}\nTaxa do Garçon R$: ${taxaGarcon.toFixed(
+      2
+    )}\nTotal a Pagar R$: ${soma.toFixed(2)}`
+  );
+</script>
