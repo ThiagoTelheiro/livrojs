@@ -1,0 +1,26 @@
+<meta charset="UTF-8" />
+
+<script>
+  //Recebe a quantidade de camisetas vendidas P, M, G
+  const camisetasP = Number(prompt("Camisetas P:"));
+  const camisetasM = Number(prompt("Camisetas M:"));
+  const camisetasG = Number(prompt("Camisetas G:"));
+
+  //Calcula a quantidade total de camisetas vendidas
+  const camisetasTotal = camisetasP + camisetasM + camisetasG;
+
+  //Calcular o valor por camisetas P, M, G vendidas
+  const valorP = camisetasP * 10;
+  const valorM = camisetasM * 12;
+  const valorG = camisetasG * 15;
+
+  //Calcula o valor total de camisetas vendidas
+  const valorTotal = valorP + valorM + valorG;
+
+  //Informa a quantidade e valor total de camisteas vendidas
+  alert(
+    `Total de Peças: ${camisetasTotal}\nTotal a Pagar: R$ ${valorTotal.toFixed(
+      2
+    )}`
+  );
+</script>
