@@ -1,0 +1,13 @@
+<meta charset="UTF-8" />
+
+<script>
+  const valorProduto = Number(prompt("Valor do Produto: "));
+  const desconto = valorProduto * 0.1;
+  const aVista = valorProduto - desconto;
+  const parcelado = valorProduto / 3;
+  alert(
+    `Preço R$: ${valorProduto.toFixed(2)}\nÀ vista R$: ${aVista.toFixed(
+      2
+    )}\nOu 3x de R$: ${parcelado.toFixed(2)}`
+  );
+</script>
