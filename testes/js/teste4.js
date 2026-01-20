@@ -11,7 +11,7 @@ frm.addEventListener("submit", (e) => {
   const precoUnitario = Number(frm.inPreco.value);
   const canetasPorPacote = Number(frm.inQuantidade.value);
   const quantidadePacote = Number(frm.inPacote.value);
-
+6
   const canetasTotal = canetasPorPacote * quantidadePacote;
   const valorTotal = canetasTotal * precoUnitario;
   const valorMedio = valorTotal / canetasTotal;
