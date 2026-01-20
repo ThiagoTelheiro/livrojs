@@ -9,13 +9,18 @@ frm.addEventListener("submit", (e) => {
   const nota1 = Number(frm.inNota1.value);
   const nota2 = Number(frm.inNota2.value);
 
-  const media = nota1 + nota2 / 2;
+  const media = (nota1 + nota2) / 2;
+
+  resp1.innerText = `Média das Notas ${media.toFixed(2)}`;
 
   if (media >= 7) {
-    resp1.innerText = `Parabéns ${nome}! Você foi aprovado(a)`;
-    resp1.style.color = "blue";
+    resp2.innerText = `Parabéns ${nome}! Você foi aprovado(a)`;
+    resp2.style.color = "green";
+  } else if (media >= 4) {
+    resp2.innerText = `Atenção ${nome}. Voçê esta em exame`;
+    resp2.style.color = "blue";
   } else {
     resp2.innerText = `Ops ${nome}, Você foi reprovado(a)`;
-    resp2.style.color = "red" 
+    resp2.style.color = "red";
   }
 });
